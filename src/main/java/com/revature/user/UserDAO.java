@@ -1,2 +1,4 @@
-package com.revature.user;public class UserDAO {
+package com.revature.user;
+
+public class UserDAO {
 }

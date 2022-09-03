@@ -1,2 +1,4 @@
-package com.revature.user;public class Role {
+package com.revature.user;
+
+public class Role {
 }
