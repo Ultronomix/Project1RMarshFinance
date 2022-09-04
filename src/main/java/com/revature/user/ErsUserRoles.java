@@ -1,4 +1,4 @@
 package com.revature.user;
 
-public class Role {
+public class ErsUserRoles {
 }
