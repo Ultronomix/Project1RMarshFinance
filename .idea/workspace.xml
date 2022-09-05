@@ -5,9 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ec5ca1d8-7127-4797-b569-14a9262bb1ae" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_9_3_2022_7_19_PM_[Changes]/shelved.patch" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_9_3_2022_7_19_PM__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/revature/user/Ers_Users.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/revature/user/ErsUsers.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/revature/user/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/revature/user/ErsUserRoles.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/revature/user/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/revature/user/UserDAO.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

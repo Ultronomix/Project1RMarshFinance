@@ -15,11 +15,12 @@ public class UserDAO {
         String sql = "SELECT" +
                       "au.user_id, au.usernsme, au.email, au.password, au.given_name, is_active, role_id " +
                       "FROM ers_Users au " +
-                      "JOIN ErsUserRoles ur ";
+                      "JOIN ers_user_roles ur ";
         
         return ErsUsers;
 
          try (Connection conn = ConnectionFactory.getInstance().getConnection()){
+             statement stmt = conn.createStatement();
 
         }catch (SQLException e) {
 
