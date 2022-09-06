@@ -1,7 +1,5 @@
 package com.revature.user;
 
-import org.postgresql.core.ConnectionFactory;
-
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -20,12 +18,10 @@ public class UserDAO {
                     "JOIN ers_user_roles ur ";
 
 
-       assert ConnectionFactory.getInstance() != null;
-
          try (Connection conn = ConnectionFactory.getInstance().getConnection()){
             Statement stmt = conn.createStatement();
 
-             ResultSet resultSet = stmt.excuteQuery(sql);
+             ResultSet resultSet = stmt.executeQuery(sql);
 
         }catch (SQLException e) {
 

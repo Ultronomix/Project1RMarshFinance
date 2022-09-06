@@ -2,6 +2,7 @@ package com.revature.user;
 
 import java.io.FileReader;
 import java.io.IOException;
+import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.util.Properties;
@@ -36,8 +37,8 @@ public class ConnectionFactory{
         return conn;
     }
 
-    public ConnectionFactory getConnection() throws SQLException {
-        return (ConnectionFactory) DriverManager.getConnection(dbProps.getProperty("db-url"), dbProps.getProperty("db-username"), dbProps.getProperty("db-password"));
+    public Connection getConnection() throws SQLException {
+        return DriverManager.getConnection(dbProps.getProperty("dbUrl"), dbProps.getProperty("dbUsername"), dbProps.getProperty("dbPassword"));
     }
 
 }
