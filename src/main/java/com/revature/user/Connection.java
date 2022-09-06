@@ -1,6 +1,13 @@
 package com.revature.user;
 
-public class Connection {
+private Properties dbProps= new Properties();
 
+public Connection() {
 
-}
+    try {
+        Class.ForName("org.postgresql.Driver");
+        dbProps.load
+        }
+
+        }
+
