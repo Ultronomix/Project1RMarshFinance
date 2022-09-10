@@ -1,6 +1,5 @@
 package com.revature.user;
 
-import java.io.FileReader;
 import java.io.IOException;
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -23,10 +22,10 @@ public class ConnectionFactory{
             //dbProps.load(new FileReader("src/main/resources/application.properties"));
         } catch (IOException e) {
             // TODO replace RuntimeException with a custom exception
-            throw new RuntimeException("Could not read from properties file.", e);
+            throw new RuntimeException("Could not read from properties file.");
         } catch (ClassNotFoundException e) {
             // TODO replace RuntimeException with a custom exception
-            throw new RuntimeException("Failed to load PostgreSQL JDBC driver.", e);
+            throw new RuntimeException("Failed to load PostgreSQL JDBC driver.");
         }
     }
 

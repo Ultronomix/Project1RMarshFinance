@@ -1,39 +1,76 @@
 create table ers_users(
-user_id varchar primary key default 
-username varchar unique not null
-email varchar unique not null
-password varchar unique not null
-given_name varchar not null
-surname varchar not null
-is_active boolean 
-role_id varchar constraint foreign key
+user_id uuid primary key default gen_random_uuid(), 
+username varchar unique not null,
+email varchar unique not null,
+password varchar unique not null,
+given_name varchar not null,
+surname varchar not null,
+is_active boolean, 
+role_id uuid,
+
+foreign key (role_id) REFERENCES ers_user_roles (role_id)
+
 );
 
 create table ers_reimbursements(
-reimb_id varchar primary key default 
-amount int 
-submitted timestamp not null
-resolved timestamp 
-description varchar not null
-receipt blob 
-payment_id varchar 
-author_id varchar constraint foreign key not null
-resolver_id varchar constraint foreign key 
-status_id varchar constraint foreign key
-type_id varchar constraint foreign key not null
+reimb_id uuid primary key default gen_random_uuid(), 
+amount int, 
+submitted timestamp not null,
+resolved timestamp, 
+description varchar not null,
+receipt varchar, 
+payment_id varchar, 
+author_id uuid not null,
+resolver_id uuid,
+status_id varchar,
+type_id varchar, 
+
+foreign key (status_id) references ers_reimbursement_statuses (status_id),
+foreign key (type_id) references ers_reimbursement_types (type_id),
+foreign key (resolver_id) references ers_users(user_id),
+foreign key (author_id) references ers_users (user_id)
+
 );
 
 create table ers_reimbursement_statuses(
-status_id varchar primary key 
-status varchar unique
+status_id varchar primary key,
+status varchar 
 );
 
 create table ers_reimbursement_types(
-type_id varchar primary key
-type varchar unique
+type_id varchar primary key,
+type varchar 
 );
 
 create table ers_user_roles(
-role_id VARCHAR primary key
-role VARCHAR unique
+role_id uuid primary key default gen_random_uuid(),
+role VARCHAR 
+
+
+select *
+from ers_user_roles
+join 
 );
+
+
+
+insert into ers_user_roles (role)
+values ('Admin');
+
+select *
+from ers_user_roles;
+
+insert into ers_users (username, email, password, given_name, surname, is_active, role_id)
+VALUES('Admin Marsh', 'rema0813@yahoo.com', 'Passw0rd1234', 'Regina', 'Marsh','True', '42b27d05-1e68-4289-a650-63af00eb48c7');
+
+
+select *
+from ers_users
+join ers_user_roles
+on ers_users.role_id = ers_user_roles.role_id;
+
+create user ReginaM with password 'Passw0rd1234';
+
+
+
+

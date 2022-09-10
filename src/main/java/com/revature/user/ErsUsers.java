@@ -1,5 +1,7 @@
 package com.revature.user;
 
+import java.lang.reflect.GenericDeclaration;
+import java.lang.reflect.TypeVariable;
 import java.util.Objects;
 
 public class ErsUsers {
@@ -103,5 +105,9 @@ public class ErsUsers {
                 ", isActive=" + isActive +
                 ", roleId='" + roleId + '\'' +
                 '}';
+    }
+
+    public String getRole() {
+        return roleId;
     }
 }
