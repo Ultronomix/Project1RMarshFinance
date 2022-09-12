@@ -21,7 +21,7 @@ public class AppContext {
 
             try {
                 System.out.println("The App is Running, but will stop");
-                appRunning = false;
+                appRunning = true;
             } catch (Exception e) {
                 e.printStackTrace();
             }
