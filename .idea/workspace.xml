@@ -5,22 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ec5ca1d8-7127-4797-b569-14a9262bb1ae" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/revature/user/servlets/AuthServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/revature/user/AppContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/revature/user/AppContext.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/revature/user/ConnectionFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/revature/user/common/ConnectionFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/revature/user/ErsReimbursementStatuses.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/revature/user/reimbursements/ErsReimbursementStatuses.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/revature/user/ErsReimbursementTypes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/revature/user/reimbursements/ErsReimbursementTypes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/revature/user/ErsReimbursements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/revature/user/reimbursements/ErsReimbursements.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/revature/user/ErsUserRoles.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/revature/user/users/ErsUserRoles.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/revature/user/ErsUsers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/revature/user/users/ErsUsers.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/revature/user/ReimbursementDAO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/revature/user/ReimbursementTypesDAO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/revature/user/ReimbusementStatusDAO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/revature/user/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/revature/user/dao/UserDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/revature/user/UserRolesDAO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/revature/user/UserServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/revature/user/servlets/UserServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/revature/user/servlets/AuthServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/revature/user/servlets/AuthServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/revature/user/servlets/UserServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/revature/user/servlets/UserServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Script-2.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Script-2.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,6 +50,20 @@
       <recent name="com.revature.user.common" />
       <recent name="com.revature.user.dao" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="Project1RMarshFinance" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">

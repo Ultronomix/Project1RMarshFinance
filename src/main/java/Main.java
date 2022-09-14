@@ -8,7 +8,7 @@ import org.apache.catalina.LifecycleException;
 import org.apache.catalina.startup.Tomcat;
 
 
-public class Main {
+        public class Main {
 
         public static void main(String[] args) throws LifecycleException {
 
@@ -16,17 +16,20 @@ public class Main {
             Tomcat webServer = new Tomcat();
 
             webServer.setBaseDir(docBase);
-            webServer.setPort(8081); // defaults to 8080, but we can set it to whatever port we want (as long as its open)
-            webServer.getConnector(); // formality, required in order for the server to receive requests
+            webServer.setPort(8081);
+            webServer.getConnector();
 
             UserDAO userDAO = new UserDAO();
             UserServlet userServlet = new UserServlet(userDAO);
             AuthServlet authServlet = new AuthServlet(userDAO);
 
 
-            webServer.addContext("/Project1RMarshFinance", docBase);
-            webServer.addServlet("/Project1RMarshFinance","UserServlet", userServlet).addMapping("/ErsUsers");
-            webServer.addServlet("Project1RMarshFinance","AuthServlet", authServlet).addMapping("/auth");
+
+            String rootContext = "/Project1RMarshFinance";
+
+            webServer.addContext(rootContext, docBase);
+            webServer.addServlet(rootContext,"UserServlet", userServlet).addMapping("/ErsUsers");
+            webServer.addServlet(rootContext,"AuthServlet", authServlet).addMapping("/auth");
 
 
             webServer.start();

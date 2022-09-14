@@ -31,11 +31,8 @@ public class UserServlet extends HttpServlet {
 
     }
 
-    @Override
-    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        // TODO implement registration logic
-        resp.getWriter().write("POST to /users works");
-    }
+
+
 
 
 }
