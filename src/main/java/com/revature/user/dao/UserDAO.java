@@ -1,4 +1,7 @@
-package com.revature.user;
+package com.revature.user.dao;
+
+import com.revature.user.common.ConnectionFactory;
+import com.revature.user.users.ErsUsers;
 
 import java.sql.*;
 import java.util.ArrayList;
@@ -10,7 +13,7 @@ public class UserDAO {
 
     private String ErsUsers;
 
-    public List<ErsUsers> getAllErsUsers() {
+    public List<com.revature.user.users.ErsUsers> getAllErsUsers() {
         String sql = "select * " +
                      "from ers_users " +
                      "join ers_user_roles " +

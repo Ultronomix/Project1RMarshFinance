@@ -1,8 +1,5 @@
 package com.revature.user;
 
-import com.revature.user.ErsUsers;
-import com.revature.user.UserDAO;
-
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 

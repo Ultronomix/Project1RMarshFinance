@@ -1,7 +1,5 @@
-package com.revature.user;
+package com.revature.user.users;
 
-import java.lang.reflect.GenericDeclaration;
-import java.lang.reflect.TypeVariable;
 import java.util.Objects;
 
 public class ErsUsers {

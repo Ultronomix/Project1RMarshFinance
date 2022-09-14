@@ -1,4 +1,4 @@
-package com.revature.user;
+package com.revature.user.reimbursements;
 
 import java.util.Objects;
 

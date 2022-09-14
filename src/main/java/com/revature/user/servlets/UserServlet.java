@@ -1,6 +1,8 @@
-package com.revature.user;
+package com.revature.user.servlets;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.revature.user.dao.UserDAO;
+import com.revature.user.users.ErsUsers;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -12,7 +14,11 @@ import java.util.List;
 public class UserServlet extends HttpServlet {
 
 
-    UserDAO userDAO = new UserDAO();
+    private final UserDAO userDAO;
+
+    public UserServlet(UserDAO userDAO){
+        this.userDAO = userDAO;
+    }
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
