@@ -79,9 +79,29 @@ insert into ers_user_roles(role)
 values('Employee');
 
 
+create table reimbursement (
+amount int,
+submitted varchar,
+description varchar,
+payment_id int,
+author_id varchar,
+status_id varchar,
+type_id varchar,
+
+foreign key (type_id) references ers_reimbursement_types (type_id)
+
+
+);
+
+
+insert into ers_reimbursement_types (type_id, type)
+values ('89', 'Travel');
+
+insert into reimbursement (amount, submitted, description, payment_id, author_id, status_id, type_id)
+values ('200', 'monday', 'Traveled to Wisconsin for meeting', '0023', 'Sammy Turner', 'Pending', '89');
 
 
 
-
-
+insert into ers_reimbursement_types (type_id, type)
+values ('99', 'Food');
 

@@ -2,6 +2,7 @@ package com.revature.user.servlets;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.revature.user.dao.UserDAO;
+import com.revature.user.service.UserService;
 import com.revature.user.users.ErsUsers;
 
 import javax.servlet.ServletException;
@@ -14,9 +15,24 @@ import java.util.List;
 public class UserServlet extends HttpServlet {
 
 
-    private final UserDAO userDAO;
+    private  UserDAO userDAO;
+    private  UserService userService;
+
+    private ObjectMapper jsonMapper;
 
     public UserServlet(UserDAO userDAO){
+
+    this.userDAO = userDAO;
+    }
+
+    public UserServlet(UserService userService, ObjectMapper jsonMapper) {
+
+        this.userService = userService;
+        this.jsonMapper = jsonMapper;
+
+    }
+
+    public void AuthServlet(UserDAO userDAO) {
         this.userDAO = userDAO;
     }
 

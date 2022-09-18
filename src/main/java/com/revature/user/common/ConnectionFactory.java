@@ -11,9 +11,7 @@ import java.util.Properties;
 public class ConnectionFactory{
 
     private static ConnectionFactory conn;
-
-
-    private Properties dbProps = new Properties();
+    Properties dbProps = new Properties();
 
     public ConnectionFactory() {
         try {

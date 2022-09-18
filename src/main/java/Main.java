@@ -1,11 +1,15 @@
 
 
-//import com.revature.user.common.ConnectionFactory;
+import com.revature.user.common.ConnectionFactory;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import com.revature.user.dao.UserDAO;
+import com.revature.user.service.AuthService;
+import com.revature.user.service.UserService;
 import com.revature.user.servlets.AuthServlet;
 import com.revature.user.servlets.UserServlet;
 import org.apache.catalina.LifecycleException;
 import org.apache.catalina.startup.Tomcat;
+import com.revature.user.dao.UserDAO;
 
 
         public class Main {
@@ -20,8 +24,11 @@ import org.apache.catalina.startup.Tomcat;
             webServer.getConnector();
 
             UserDAO userDAO = new UserDAO();
-            UserServlet userServlet = new UserServlet(userDAO);
-            AuthServlet authServlet = new AuthServlet(userDAO);
+            AuthService authService = new AuthService(userDAO);
+            UserService userService = new UserService(userDAO);
+            ObjectMapper jsonMapper = new ObjectMapper();
+            UserServlet userServlet = new UserServlet(userService, jsonMapper);
+            AuthServlet authServlet = new AuthServlet(authService, jsonMapper);
 
 
 
